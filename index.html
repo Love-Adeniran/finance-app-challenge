@@ -195,53 +195,93 @@
                     <div class="budget">
                         <div class="budget-heading">
                             <div class="heading">
-                                <h3>Budget</h3>
+                                <h3>Budgets</h3>
                             </div>
                             <div class="heading">
                                 <p>See Details</p>
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <div>
-                                    <canvas id="myChart"></canvas>
+                        <div class="budget-chart-list">
+                            <div class="chart">
+
+                            </div>
+                            <div class="budget-list">
+                                <div class="each-budget-list green">
+                                    <div class="each-budget">
+                                        <p>Entertainment</p>
+                                        <h4>$50.00</h4>
+                                    </div>
+                                </div>
+                                <div class="each-budget-list blue">
+                                    <div class="each-budget">
+                                        <p>Bills</p>
+                                        <h4>$750.00</h4>
+                                    </div>
+                                </div>
+                                <div class="each-budget-list purple">
+                                    <div class="each-budget">
+                                        <p>Personal Care</p>
+                                        <h4>$100.00</h4>
+                                    </div>
+                                </div>
+                                <div class="each-budget-list pink">
+                                    <div class="each-budget">
+                                        <p>Dining out</p>
+                                        <h4>$75.00</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div></div>
+                        </div>
+
+                    </div>
+
+                    <div class="R-bills">
+                        <div class="R-bill-heading">
+                            <div class="heading">
+                                <h3>Recurring Bills</h3>
+                            </div>
+                            <div class="heading">
+                                <p>See Details</p>
+                            </div>
+                        </div>
+                        <div class="R-bill-list">
+                            <div class="each-R-bill green">
+                                <div class="R-bill-p">
+                                    <p>Paid Bills</p>
+                                </div>
+                                <div class="R-bill-h5">
+                                    <h5>$190.00</h5>
+                                </div>
+                            </div>
+                            <div class="each-R-bill pink">
+                                <div class="R-bill-p">
+                                    <p>Total upcoming</p>
+                                </div>
+                                <div class="R-bill-h5">
+                                    <h5>$194.98</h5>
+                                </div>
+                            </div>
+                            <div class="each-R-bill blue">
+                                <div class="R-bill-p">
+                                    <p>Due soon</p>
+                                </div>
+                                <div class="R-bill-h5">
+                                    <h5>59.98</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="bills"></div>
                 </div>
+
             </div>
-        </main>
     </div>
 
+    </div>
+    <!-- </div> -->
+    </div>
+    </main>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const config = {
-                type: 'doughnut',
-                data: data,
-            };
-        const data = {
-                labels: [
-                    'Red',
-                    'Blue',
-                    'Yellow'
-                ],
-                datasets: [{
-                    label: 'My First Dataset',
-                    data: [300, 50, 100],
-                    backgroundColor: [
-                        'rgb(255, 99, 132)',
-                        'rgb(54, 162, 235)',
-                        'rgb(255, 205, 86)'
-                    ],
-                    hoverOffset: 4
-                }]
-            };
-            config()
-    </script>
 </body>
 
 </html>
