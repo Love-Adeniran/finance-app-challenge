@@ -1,49 +1,54 @@
+@font-face {
+    font-family: 'staple-font';
+    src: url(./stapleFont/Stapel_Bold.otf);
+}
+@font-face {
+    font-family: 'roboto-font';
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
 }
 
 body{
-
-    /* display: grid;
-    grid-gap: 1em;
-    grid-template-rows: auto;
-    grid-template-columns: auto; */
-    /* display: grid; */
+    overflow-x: hidden;
 }
 
-.container{
-    /* grid-gap: 1em;
-    grid-template-columns:12en 1fr;
-    grid-template-rows: auto 1fr auto; */
+.container{    
+    width: 100%;
     display: flex;
-    
-    /* max-width: 1; */
 }
 /*Side nav starts here*/
 .title{
     padding: 10px;
+    font-family: 'staple-font';
 }
 nav{
-    /* grid-row: span 2; */
     background-color: #000;
     color:#fff;
-    /* width: 15%; */
-    padding: 10px 10px 10px 0;
+    width: 100%;
+    padding: 10px 0px 10px 0;
     border-radius: 0 10px 10px 0;
-    display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 .nav-links {
     padding: 10px 10px 10px 0;
     height: 80vh;
 }
+
 .nav-links .link{
     margin:  4px 10px 4px 1px;
     padding: 10px;
-    /* width: 100%; */
+    color: #8a8a8a;
+}
+span img{
+    width:10%;
+    height: 10%;
+    color: #8a8a8a;
 }
 .link a{
     text-decoration: none;
@@ -64,14 +69,14 @@ nav{
 }
 .max-menu{
     padding: 5px;
+    color: #8a8a8a;
 }
 /*side nav ends here*/
 
 main{
-    /* grid-column: span 2; */
-    padding: 10px;
-    width: 100%;
+    padding: 5px;
     background-color: #f8f5f0;
+    width: 900%;
 }
 
 /*Overview starts here*/
@@ -79,19 +84,21 @@ main{
     position: relative;
     top: 0;
     left: 2.8%;
-    padding: 7px;
-    max-width: 94%;
+    padding: 1vh;
+    font-size: 1.5em;
 }
 
 .overview{
     padding: 5px;
     display: flex;
-    margin: 5px;
+    flex-wrap: wrap;
+    margin: 2px;
     justify-content: space-evenly;
 }
 
 .overview .amount{
     margin: 5px 10px;
+    flex: 1 1 300px;
     width: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -100,33 +107,29 @@ main{
 .amount.bal{
     background-color: #000;
     color: #fff;
-    /* padding: 5px; */
 }
 .amount p{
     color: #8a8a8a;
-    font-size: 12px;
+    font-size: 11px;
     padding: 5px;
     margin: 5px 0;
 }
 /*Overview ends here*/
 .section{
     display: flex;
-    padding: 10px;
-    border: 1px solid;
-    margin: 10px;
-    width: 100%;
+    padding: 5px;
+    flex-wrap: wrap;
 }
 .inner-section1{
-    padding: 10px;
-    /* width:100% */
+    padding: 5px;
+    flex: 1 1 300px;
 }
 /*pots starts here*/
 .pots{
     border-radius: 15px;
-    margin: 10px ;
-    padding: 10px;
+    margin: 10px 5px;
+    padding: 5px;
     background-color: #fff;
-    
 }
 .pots-heading{
     display: flex;
@@ -134,55 +137,62 @@ main{
     padding: 5px;
 }
 .heading p{
-    font-size: 12px;
+    font-size: 10px;
     color: #6c6b6b;
+}
+.heading h3{
+    font-size: 1em;
 }
 
 .blocks{
     padding: 1px;
+    margin:  5px;
     display: flex;
-    justify-content: space-between;
-
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .block1{
+    flex: 1 1 80px;
     background-color: #f8f5f0;
     display: flex;
-    padding: 0 20px 0 5px;
     border-radius: 15px;
-    margin:  18px;
-    /* width: 50%; */
+    margin: 10px 4px;
 }
 .t-saved{
     padding: 5px 10px;
     margin: 2px;
-    /* display: inline; */
     align-self: center;
-    /* border: 1px solid; */
 }
 .t-saved p{
-    font-size: 10px;
-    padding: 5px;
-    margin: 0;
+    font-size: 11px;
+    padding: px;
+    margin: 8px 0;
     text-wrap: nowrap;
 }
 .t-saved.text{
-    /* border: 1px solid; */
     margin: 2px 10px 2px 4px;
 }
 .t-saved.text p{
     padding: 2px;
 }
+.t-saved span{
+    font-size: 3em;
+    color: rgb(1, 63, 1);
+}
+
 
 .block2{
+    flex: 1 1 200px;
+    padding: 5px;
+    justify-content: space-evenly;
     display: flex;
-    padding: 10px;
 }
 .save-box{
     margin: 2px;
 }
 .save-box-savings, .save-box-ticket, .save-box-gift, .save-box-laptop{
-    margin: 10px;
-    padding: 0 10px 0 8px;
+    margin: 5px;
+    padding: 5px;
     border-radius: 5px;
 }
 .save-box-savings{
@@ -199,14 +209,14 @@ main{
 }
 
 .save-box p{
-    /* border: 1px solid; */
     padding: 2px;
-    margin: 5px 10px 5px 0;
+    margin: 5px;
     text-wrap: nowrap;
 }
 .inner-save-box{
-    padding: 0 15px 0 2px;
-    margin: 0 2px;
+    padding: 3px;
+    margin: 2px;
+    /* border: 1px solid; */
 }
 .save-box p{
     font-size: 10px;
@@ -220,24 +230,27 @@ main{
 
 /* transaction starts here*/
 .transaction{
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 5px ;
+    padding: 5px;
     background-color: #fff;
     border-radius: 10px;
 }
 .trans-heading{
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
 }
 
 .trans-list{
-    margin: 10px;
+    margin: 5px;
+    padding: 2px;
 }
 .each-trans{
     margin: 5px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #f8f5f0;
 }
 .trans-profile{
     display: flex;
@@ -247,8 +260,8 @@ main{
     margin: 2px;
 }
 .trans-avatar img{
-    width: 3vw;
-    height: 6vh;
+    width: 2vw;
+    height: 4vh;
     margin: auto;
     border-radius: 90%;
 }
@@ -261,38 +274,54 @@ main{
 .credit{
     color: rgb(2, 179, 188);
 }
-
+.amountdate{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
 .date{
     font-size: 10px;
     letter-spacing: 0.5px;
 }
 
+p i{
+    font-size: 0.8em;
+    cursor: pointer;
+}
 /*transaction ends here*/
 
 .inner-section2{
     padding: 5px;
-    width: 100%;
+    flex: 1 1 300px;
 }
 
 /*budget starts here*/
 .budget{
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 5px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 12px;
+    padding: 5px;
 }
 .budget-heading{
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
-    margin: 5px;
+    margin: 5px 5px 2px 5px;
 }
 .heading{
-    padding: 5px;
-    margin: 5px;
+    padding: 2px;
 }
 .budget-chart-list{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+.chart canvas{
+    padding: 2px;
+}
+.budget-list{
+    padding: 0 2px;
 }
 .each-budget-list{
     border-left: 4px solid;
@@ -300,22 +329,20 @@ main{
     margin: 5px;
 }
 .each-budget{
-    padding: 5px;
-    margin: 5px;
+    padding: 2px;
+    margin: 2px;
 }
 .each-budget p{
     font-size: 10px;
     color: #8a8a8a;
-    /* margin: 5px; */
 }
-
 /*budget ends here*/
 
 /*R-bills starts here*/
 .R-bills{
     background-color: #fff;
     border-radius: 10px;
-    margin: 5px;
+    margin: 10px 5px 2px 5px;
     padding: 5px;
 }
 .R-bill-heading{
@@ -357,4 +384,14 @@ main{
 }
 .pink{
     border-color: rgb(220, 163, 144);
+}
+
+
+@media only screen and (max-width:600px){
+    .nav-links{
+        /* width: 100%; */
+        flex-direction: column-reverse;
+        /* flex-direction: row; */
+        
+    }
 }
