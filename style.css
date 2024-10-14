@@ -460,14 +460,14 @@ p i{
     nav{
         /* display: none; */
         width: 100vw;
-        height: 10vh;
+        height: 6vh;
         flex-direction: row;
-        /* align-items: baseline; */
+        margin-right: 10px;
         position: fixed;
         bottom: 0;
         left: 0;
         border-radius: 10px 10px 0 0 ;
-
+        padding-left: 50px;
     }
     .nav-links{
         margin: 0;
@@ -475,7 +475,6 @@ p i{
         display: flex;
         flex-direction: row;
         max-width: 100%;
-
         margin-left: 30px;
     }
     .min-menu{
